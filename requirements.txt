@@ -1,0 +1,3 @@
+mkdocs-material[all]
+mkdocs-material-extensions
+mkdocstrings
