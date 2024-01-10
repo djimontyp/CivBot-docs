@@ -1,5 +1,5 @@
 site_name: About CivBot
-site_url: https://djimontyp.github.io/civbot/
+site_url: https://djimontyp.github.io/CivBot-docs/
 nav:
   - Трохи тексту:
       - Про типізацію взагалі: index.md
