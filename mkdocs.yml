@@ -1,0 +1,111 @@
+site_name: About CivBot — discord bot for Civilization V game.
+site_url: https://djimontyp.github.io/CivBot-docs/
+
+nav:
+  - CivBot: index.md
+  - Getting started: getting_started.md
+  - Commands: commands.md
+
+theme:
+  icon:
+    logo: fontawesome/solid/robot
+    translate: fontawesome/regular/globe
+  language: uk
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.instant # Коли ввімкнено, навігація відображається при завантаженні сторінки
+    - navigation.indexes # Коли ввімкнено, відображається індекс навігації
+    - navigation.path # Коли ввімкнено, відображається шлях навігації
+    - navigation.expand # Коли розширення ввімкнено, ліва бічна панель за замовчуванням розгорне всі підрозділи
+    - navigation.sections # Коли ввімкнено, відображається кнопка "Зміст"
+    - navigation.top # Коли ввімкнено, відображається кнопка "Вгору"
+    - toc.follow # Коли ввімкнено слідування прив'язки для змісту
+    - search.suggest # Коли ввімкнено, відображається підказка пошуку
+    - search.highlight
+    - content.tabs.link # Коли ввімкнено, відображається кнопка "Посилання" для вкладок
+    - content.code.annotation # Коли ввімкнено, відображається кнопка "Анотація" для блоків коду
+    - content.code.copy # Коли ввімкнено, відображається кнопка "Копіювати" для блоків коду
+  palette:
+    - scheme: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: orange
+      accent: red
+    - scheme: grey
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: blue grey
+      accent: orange
+
+plugins:
+  - search
+  - mkdocstrings
+  - tags
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          build: true
+
+        - locale: uk
+          name: Ukrainian
+          default: true
+          build: true
+          site_name: CivBot — discord bot для гри Civilization V.
+          nav_translations:
+            Commands: Команди
+            Getting started: Початок роботи
+
+        - locale: ru
+          name: Russian
+          build: true
+          site_name: CivBot — discord bot для игры Civilization V.
+          nav_translations:
+            Commands: Команды
+            Getting started: Начало работы
+
+
+
+extra:
+  analytics:
+    provider: google
+    property: G-FJ3QBDSVV9
+
+markdown_extensions:
+  - def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - attr_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+extra_javascript:
+  - js/termynal.js
+  - js/custom.js
+
+copyright: |
+  &copy; 2023 <a href="https://maks-naumenko.com"  target="_blank" rel="noopener">Maks Naumenko</a>

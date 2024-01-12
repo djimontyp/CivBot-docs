@@ -1,3 +1,4 @@
 mkdocs-material[all]
 mkdocs-material-extensions
 mkdocstrings
+mkdocs-static-i18n
