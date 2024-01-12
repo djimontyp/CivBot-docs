@@ -1,11 +1,9 @@
 site_name: About CivBot
+docs_dir: '../../docs/uk'
+site_dir: '../../generated/uk'
 site_url: https://djimontyp.github.io/CivBot-docs/
 nav:
-  - Трохи тексту:
-      - Про типізацію взагалі: index.md
-      - Про поступову типізацію: gradual.md
-  - Перевантаження: functions.md
-  - Порівняння продуктивності: performance.md
+  - Команди: index.md
 
 theme:
   icon:
@@ -13,6 +11,7 @@ theme:
   language: uk
   name: material
   features:
+    - navigation.tabs
     - navigation.instant # Коли ввімкнено, навігація відображається при завантаженні сторінки
     - navigation.indexes # Коли ввімкнено, відображається індекс навігації
     - navigation.path # Коли ввімкнено, відображається шлях навігації
@@ -28,13 +27,13 @@ theme:
   palette:
     - scheme: orange
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Switch to dark mode
       primary: orange
       accent: red
     - scheme: grey
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Switch to light mode
       primary: blue grey
       accent: orange
@@ -48,11 +47,6 @@ extra:
   analytics:
     provider: google
     property: G-L5S0GP1JFF
-  social:
-    - icon: material/github
-      link: https://github.com/djimontyp
-    - icon: material/linkedin
-      link: https://www.linkedin.com/in/maks-naumenko/
   alternate:
     - name: Ukrainian
       link: /uk/
