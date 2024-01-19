@@ -7,7 +7,7 @@ This documentation will help you learn what CivBot is capable of and how to inte
 ## How to add CivBot to your server?
 
 If you have your own Discord server or have authority to add bots, then you can add CivBot with help
-**[this link](https://discord.com/api/oauth2/authorize?client_id=1009788964460310558&permissions=328565386240&scope=bot%20applications.commands)**.
+**[this link](https://discord.com/api/oauth2/authorize?client_id=1009788964460310558&permissions=17998061366336&scope=bot+applications.commands)**.
 <br />You can select the available servers to add after following the link.
 
 ---

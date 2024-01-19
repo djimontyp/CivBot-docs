@@ -4,7 +4,13 @@ site_url: https://djimontyp.github.io/CivBot-docs/
 nav:
   - CivBot: index.md
   - Getting started: getting_started.md
-  - Commands: commands.md
+  - Commands:
+    - /game:
+      - create: commands/game_create.md
+      - join: commands/game_join.md
+      - leave: commands/game_leave.md
+  - States: states.md
+  - Config: config.md
 
 theme:
   icon:
@@ -14,18 +20,18 @@ theme:
   name: material
   features:
     - navigation.tabs
-    - navigation.instant # Коли ввімкнено, навігація відображається при завантаженні сторінки
-    - navigation.indexes # Коли ввімкнено, відображається індекс навігації
-    - navigation.path # Коли ввімкнено, відображається шлях навігації
-    - navigation.expand # Коли розширення ввімкнено, ліва бічна панель за замовчуванням розгорне всі підрозділи
-    - navigation.sections # Коли ввімкнено, відображається кнопка "Зміст"
-    - navigation.top # Коли ввімкнено, відображається кнопка "Вгору"
-    - toc.follow # Коли ввімкнено слідування прив'язки для змісту
-    - search.suggest # Коли ввімкнено, відображається підказка пошуку
+    - navigation.instant
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.path
+    - navigation.expand
+    - navigation.top
+    - toc.follow
+    - search.suggest
     - search.highlight
-    - content.tabs.link # Коли ввімкнено, відображається кнопка "Посилання" для вкладок
-    - content.code.annotation # Коли ввімкнено, відображається кнопка "Анотація" для блоків коду
-    - content.code.copy # Коли ввімкнено, відображається кнопка "Копіювати" для блоків коду
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
   palette:
     - scheme: orange
       toggle:
@@ -37,7 +43,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-      primary: blue grey
+      primary: black
       accent: orange
 
 plugins:
@@ -59,6 +65,12 @@ plugins:
           nav_translations:
             Commands: Команди
             Getting started: Початок роботи
+            /game: /гра
+            create: створити
+            join: приєднатися
+            leave: покинути
+            States: Стани
+            Config: Налаштування
 
         - locale: ru
           name: Russian
@@ -67,6 +79,12 @@ plugins:
           nav_translations:
             Commands: Команды
             Getting started: Начало работы
+            /game: /игра
+            create: создать
+            join: присоединиться
+            leave: покинуть
+            States: Статусы
+            Config: Настройки
 
 
 

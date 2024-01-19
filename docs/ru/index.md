@@ -7,7 +7,7 @@
 ## Как добавить CivBot на свой сервер?
 
 Если у вас есть собственный сервер Discord или вы имеете право добавлять ботов, вы можете добавить CivBot с помощью
-**[эта ссылка](https://discord.com/api/oauth2/authorize?client_id=1009788964460310558&permissions=328565386240&scope=bot%20applications.commands)**.
+**[эта ссылка](https://discord.com/api/oauth2/authorize?client_id=1009788964460310558&permissions=17998061366336&scope=bot+applications.commands)**.
 <br />Выбрать доступные серверы для добавления можно, перейдя по ссылке.
 
 ---
