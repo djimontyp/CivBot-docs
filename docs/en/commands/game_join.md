@@ -9,6 +9,9 @@ You must specify the identifier (number) of the game to join.<br/>
 
 **`/game join`** - adds a player to the game.
 
+!!! attention "Attention"
+    The command has a cooldown of 10 seconds before re-use.
+
 ## Options
 
 #### Optional
