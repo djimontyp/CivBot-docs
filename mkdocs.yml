@@ -3,6 +3,7 @@ site_url: https://djimontyp.github.io/CivBot-docs/
 
 nav:
   - CivBot: index.md
+  - Features: features.md
   - Getting started: getting_started.md
   - Commands:
     - /game:
@@ -18,6 +19,7 @@ theme:
   icon:
     logo: fontawesome/solid/robot
     translate: fontawesome/regular/globe
+    annotation: material/star-four-points-circle
   language: en
   name: material
   features:
@@ -66,6 +68,7 @@ plugins:
           site_name: CivBot — discord bot для гри Civilization V.
           nav_translations:
             Commands: Команди
+            Features: Основні можливості
             Getting started: Початок роботи
             /game: /гра
             create: створити
@@ -82,6 +85,7 @@ plugins:
           site_name: CivBot — discord bot для игры Civilization V.
           nav_translations:
             Commands: Команды
+            Features: Основные возможности
             Getting started: Начало работы
             /game: /игра
             create: создать
@@ -101,6 +105,9 @@ extra:
 
 markdown_extensions:
   - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
