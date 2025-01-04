@@ -3,23 +3,23 @@ site_url: https://djimontyp.github.io/CivBot-docs/
 
 nav:
   - CivBot: index.md
-  - Getting started: getting_started.md
-  - Commands:
-    - /game:
-      - create: commands/game_create.md
-      - join: commands/game_join.md
-      - leave: commands/game_leave.md
-      - kick: commands/game_kick.md
-      - refresh: commands/game_refresh.md
-  - States: states.md
-  - Config: config.md
+  - Rating: rating.md
+#  - Features:
+#    - Game:
+#      - Create: commands/game_create.md
+#      - Join: commands/game_join.md
+#      - Kick: commands/game_kick.md
+#      - Leave: commands/game_leave.md
+#      - Refresh: commands/game_refresh.md
+#  - Config: config.md
 
 theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.png
   icon:
-    logo: fontawesome/solid/robot
     translate: fontawesome/regular/globe
   language: en
-  name: material
   features:
     - navigation.tabs
 #    - navigation.instant
@@ -34,19 +34,32 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+  extra_css:
+    - stylesheets/extra.css
   palette:
-    - scheme: orange
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-      primary: orange
-      accent: red
-    - scheme: grey
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
       toggle:
         icon: material/weather-night
-        name: Switch to light mode
-      primary: black
-      accent: orange
+        name: Switch to system preference
 
 plugins:
   - search
@@ -65,15 +78,14 @@ plugins:
           build: true
           site_name: CivBot — discord bot для гри Civilization V.
           nav_translations:
-            Commands: Команди
-            Getting started: Початок роботи
-            /game: /гра
-            create: створити
-            join: приєднатися
-            leave: покинути
-            kick: вигнати
-            refresh: оновити
-            States: Стани
+            Features: Функціонал
+            Rating: Рейтинг
+            Game: Гра
+            Create: Створити
+            Join: Приєднатися
+            Leave: Покинути
+            Kick: Вигнати
+            Refresh: Оновити
             Config: Налаштування
 
         - locale: ru
@@ -81,16 +93,16 @@ plugins:
           build: true
           site_name: CivBot — discord bot для игры Civilization V.
           nav_translations:
-            Commands: Команды
-            Getting started: Начало работы
-            /game: /игра
-            create: создать
-            join: присоединиться
-            leave: покинуть
-            kick: выгнать
-            refresh: обновить
-            States: Статусы
+            Features: Функционал
+            Rating: Рейтинг
+            Game: Игра
+            Create: Создать
+            Join: Присоединиться
+            Leave: Покинуть
+            Kick: Выгнать
+            Refresh: Обновить
             Config: Настройки
+
 
 
 
